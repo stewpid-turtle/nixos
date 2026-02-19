@@ -33,7 +33,7 @@ fi
 sudo mv nixos/* /etc/nixos/
 
 #bashrc
-if [ ! "$HOME/.bashrc" ]; then
+if [ ! -f "$HOME/.bashrc" ]; then
     mv .bashrc ~/
 fi
 
