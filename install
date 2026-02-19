@@ -9,15 +9,22 @@ echo "
 #  [_____]                                                                 #
 ############################################################################
 "
-
+#configs
 if [ ! -d "$HOME/.config" ]; then
     echo "Creating .config directory..."
     mkdir -p "$HOME/.config"
 fi
-
 echo "Installing configs..."
  mv fastfetch hypr kitty waybar wlogout wofi ~/.config/
 
+#wallpapers
+if [ ! -d "$HOME/Pictures" ]; then
+    echo "Creating Pictures directory..."
+    sudo mkdir ~/Pictures
+fi
+mv lock.png wallpaper.jpg ~/Pictures
+
+#nixos
 if [ ! -d "/etc/nixos/" ]; then
     echo "Creating nixos directory..."
     sudo mkdir /etc/nixos/
