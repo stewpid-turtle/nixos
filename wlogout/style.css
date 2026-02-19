@@ -1,0 +1,40 @@
+/* The main background */
+window {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Target the buttons and their internal containers */
+button, 
+button box, 
+button box image, 
+button box label {
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    background-image: none; /* Removes default GTK gradients */
+}
+
+button {
+    background-color: transparent;
+    border: 3px solid #00ffff;
+    color: #00ffff;
+    font-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+/* Hover/Focus state */
+button:focus,
+button:active,
+button:hover {
+    background-color: rgba(0, 255, 255, 0.1);
+    outline-style: none;
+}
+
+button label{
+    margin-left: 10px;
+    margin-bottom: 100px;
+}

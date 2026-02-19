@@ -1,0 +1,28 @@
+#!/run/current-system/sw/bin/bash
+
+echo " 
+############################################################################
+#  _     _                                                                 #
+# [ ]---[ ]  ---------------------------                                   #
+#  |  _  |   stewpid-turtle's nixos-rice                                   #
+#  | (_) |   ---------------------------                                   #
+#  [_____]                                                                 #
+############################################################################
+"
+
+if [ ! -d "$HOME/.config" ]; then
+    echo "Creating .config directory..."
+    mkdir -p "$HOME/.config"
+fi
+
+echo "Installing configs..."
+ mv fastfetch hypr kitty waybar wlogout wofi ~/.config/
+
+if [ ! -d "/etc/nixos/" ]; then
+    echo "Creating nixos directory..."
+    sudo mkdir /etc/nixos/
+fi
+
+sudo mv nixos/* /etc/nixos/
+
+echo "INSTALLATION FINISHED, DO NOT FORGET TO CHANGE YOUR USERNAME,TIMEZONE AND HOSTNAME IN /etc/nixos/users.nix and /etc/nixos/networking.nix"

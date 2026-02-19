@@ -1,0 +1,126 @@
+#waybar{
+	background-color: rgba(0,0,0,0.5);
+	font-family: "Fira Code",monospace;
+	font-size: 14px;
+	/*height: 30px;*/
+}
+
+.{
+	font-family: 'ttf-dejavu', sans-serif;
+}
+
+#network{
+        background-color: rgba(0,0,0,0.5); 
+        color: #ffffff; 
+        border: 2px solid #00ffff;
+        border-radius: 12px;
+        padding: 2px 10px;
+        margin: 0 1px;
+}
+
+#custom-mymodule{
+        background-color: rgba(0,0,0,0.5);
+        color: #ffffff;
+        border: 2px solid #00ffff;
+        border-radius: 12px;
+        padding: 2px 10px;
+        margin: 0 1px; 
+}
+
+#pulseaudio{
+	background-color: rgba(0,0,0,0.5); /*color of bar background*/
+	color: #ffffff; /*white text*/
+	border: 2px solid #00ffff; /*cyan border*/
+	border-radius: 12px; /*rounded corner*/
+	padding: 2px 10px; /*vertical and horizontal*/
+	margin: 0 1px; /*space between modules*/
+
+}
+#tray{
+        background-color: rgba(0,0,0,0.5);
+        color: #ffffff;
+        border: 2px solid #00ffff;
+        border-radius: 12px;
+        padding: 2px 10px;
+        margin: 0 1px; 
+}
+#cpu{
+        background-color: rgba(0,0,0,0.5); /*color of module background*/
+        color: #ffffff; /*white text*/
+        border: 2px solid #00ffff; /*cyan border*/
+        border-radius: 12px; /*rounded corner*/
+        padding: 2px 10px; /*vertical and horizontal*/
+        margin: 0 1px; /*space between modules*/
+}
+
+#memory{
+        background-color: rgba(0,0,0,0.5);
+        color: #ffffff;
+        border: 2px solid #00ffff;
+        border-radius: 12px;
+        padding: 2px 10px;
+        margin: 0 1px;
+}
+#temperature{
+        background-color: rgba(0,0,0,0.5);
+        color: #ffffff; 
+        border: 2px solid #00ffff;
+        border-radius: 12px;
+        padding: 2px 10px;
+        margin: 0 1px; 
+}
+#battery{
+        background-color: rgba(0,0,0,0.5); 
+        color: #ffffff; 
+        border: 2px solid #00ffff;
+        border-radius: 12px;
+        padding: 2px 10px;
+        margin: 0 1px;
+}
+#custom-power{
+        background-color: rgba(0,0,0,0.5);
+        color: #ffffff;
+        border: 2px solid #00ffff;
+        border-radius: 12px;
+        padding: 2px 10px;
+        margin: 0 1px;
+}
+#clock{
+        background-color: rgba(0,0,0,0.5);
+        color: #ffffff;
+        border: 2px solid #00ffff;
+        border-radius: 12px;
+        padding: 2px 10px;
+        margin: 0 1px; 
+}
+#workspaces button label{
+	color: #ffffff;
+}
+
+#workspaces button{
+        background-color: rgba(0,0,0,0.5); 
+        color: #ffffff; 
+        border: 2px solid #00ffff; 
+        border-radius: 12px; 
+        padding: 2px 10px; 
+        margin: 0 1px; 
+}
+#window{
+        background-color: rgba(0,0,0,0.5); 
+        color: #ffffff; 
+        border: 2px solid #00ffff; 
+        border-radius: 12px; 
+        padding: 2px 10px; 
+        margin: 0 1px; 
+}
+
+
+
+/*hover effecr*/
+
+.module:hover{
+	background-color: #666666; /*hover background*/
+	border-color: #00ffff; /*cyan border on hover*/
+	color: #00ffff;
+
+}
