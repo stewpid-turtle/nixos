@@ -1,0 +1,13 @@
+#!/run/current-system/sw/bin/bash
+
+# Directory where screenshots go
+DIR="$HOME/Pictures/Screenshots"
+
+# Find the next available number
+N=1
+while [ -f "$DIR/screenshot-$N.png" ]; do
+    N=$((N+1))
+done
+
+# Run the command
+grim -g "$(slurp)" "$DIR/screenshot-$N.png"
