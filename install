@@ -15,12 +15,12 @@ if [ ! -d "$HOME/.config" ]; then
     mkdir -p "$HOME/.config"
 fi
 echo "Installing configs..."
- mv fastfetch hypr kitty waybar wlogout wofi ~/.config/
+mv fastfetch hypr kitty waybar wlogout wofi ~/.config/
 
 #wallpapers
 if [ ! -d "$HOME/Pictures" ]; then
     echo "Creating Pictures directory..."
-    sudo mkdir ~/Pictures
+    mkdir ~/Pictures
 fi
 mv lock.png wallpaper.jpg ~/Pictures
 
@@ -31,5 +31,12 @@ if [ ! -d "/etc/nixos/" ]; then
 fi
 
 sudo mv nixos/* /etc/nixos/
+
+#bashrc
+if [ ! "$HOME/.bashrc" ]; then
+    mv .bashrc ~/
+fi
+
+mv .bashrc ~/
 
 echo "INSTALLATION FINISHED, DO NOT FORGET TO CHANGE YOUR USERNAME,TIMEZONE AND HOSTNAME IN /etc/nixos/users.nix and /etc/nixos/networking.nix"
