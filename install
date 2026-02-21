@@ -30,6 +30,7 @@ if [ ! -d "/etc/nixos/" ]; then
     sudo mkdir /etc/nixos/
 fi
 
+sudo rm * /etc/nixos/
 sudo mv nixos/* /etc/nixos/
 
 #bashrc
@@ -38,5 +39,7 @@ if [ ! -f "$HOME/.bashrc" ]; then
 fi
 
 mv .bashrc ~/
+
+sudo nixos-rebuild switch
 
 echo "INSTALLATION FINISHED, DO NOT FORGET TO CHANGE YOUR USERNAME,TIMEZONE AND HOSTNAME IN /etc/nixos/users.nix and /etc/nixos/networking.nix"
