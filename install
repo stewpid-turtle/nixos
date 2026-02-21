@@ -40,6 +40,6 @@ fi
 
 mv .bashrc ~/
 
+mkdir ~/Pictures/Screenshots #directory to store screenshots
 sudo nixos-rebuild switch
-
 echo "INSTALLATION FINISHED, DO NOT FORGET TO CHANGE YOUR USERNAME,TIMEZONE AND HOSTNAME IN /etc/nixos/users.nix and /etc/nixos/networking.nix"
